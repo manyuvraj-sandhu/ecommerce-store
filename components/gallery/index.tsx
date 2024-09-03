@@ -33,7 +33,7 @@ const Gallery: React.FC<GalleryProps> = ({
             <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
                 <Tab.List className="grid grid-cols-4 gap-6">
                     {images.map((image) => (
-                        <GalleryTab ket={image.id} image={image} />
+                        <GalleryTab key={image.id} image={image} />
                     ))} 
                 </Tab.List>
             </div>
